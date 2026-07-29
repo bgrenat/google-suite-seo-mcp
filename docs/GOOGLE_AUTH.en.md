@@ -63,7 +63,7 @@ In **Google Auth Platform → Data Access**, add:
 https://www.googleapis.com/auth/analytics.readonly
 ```
 
-Search using the complete URI after enabling the GA4 APIs. The OAuth file must be readable JSON without a UTF-8 BOM.
+Search using the complete URI after enabling the GA4 APIs. The file must be readable JSON without a UTF-8 BOM. The MCP accepts either an OAuth client (`client_id` + `client_secret`) or a service account (`type: service_account`, `client_email` + `private_key`).
 
 ## CrUX
 

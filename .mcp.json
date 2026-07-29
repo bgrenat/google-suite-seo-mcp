@@ -8,7 +8,7 @@
       }
     },
     "google_analytics": {
-      "command": "C:\\Users\\x-v-i\\.codex\\mcp-servers\\seo-google-suite-ga4-venv\\Scripts\\analytics-mcp.exe",
+      "command": "C:\\Users\\x-v-i\\.codex\\mcp-servers\\ga4-venv\\Scripts\\analytics-mcp.exe",
       "startup_timeout_sec": 60,
       "env": {
         "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\x-v-i\\.codex\\secrets\\google\\ga4-credentials.json",

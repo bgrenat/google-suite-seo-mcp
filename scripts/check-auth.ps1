@@ -30,7 +30,24 @@ function Test-JsonFile {
 }
 
 $gscOk = Test-JsonFile -Path $gscJson -RequiredKeys @("client_email", "private_key")
-$ga4Ok = Test-JsonFile -Path $ga4Json -RequiredKeys @("client_id", "client_secret")
+$ga4Ok = $false
+if (Test-Path $ga4Json) {
+  $ga4 = Get-Content -Raw $ga4Json | ConvertFrom-Json
+  $isServiceAccount = ($ga4.type -eq "service_account" -and
+    $ga4.PSObject.Properties.Name -contains "client_email" -and
+    $ga4.PSObject.Properties.Name -contains "private_key")
+  $isOAuthClient = ($ga4.PSObject.Properties.Name -contains "client_id" -and
+    $ga4.PSObject.Properties.Name -contains "client_secret")
+
+  if ($isServiceAccount -or $isOAuthClient) {
+    Write-Host "OK $ga4Json"
+    $ga4Ok = $true
+  } else {
+    Write-Warning "$ga4Json is neither a service-account JSON nor an OAuth client JSON"
+  }
+} else {
+  Write-Warning "Missing $ga4Json"
+}
 
 if (-not $gscOk -or -not $ga4Ok) {
   throw "Google auth is incomplete. See docs\GOOGLE_AUTH.md."

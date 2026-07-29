@@ -60,7 +60,7 @@ Dans **Google Auth Platform → Data Access**, ajoutez :
 https://www.googleapis.com/auth/analytics.readonly
 ```
 
-Recherchez l'URI complète après avoir activé les APIs GA4. Le fichier OAuth doit être un JSON lisible sans BOM UTF-8.
+Recherchez l'URI complète après avoir activé les APIs GA4. Le fichier doit être un JSON lisible sans BOM UTF-8. Le MCP accepte soit un client OAuth (`client_id` + `client_secret`), soit un compte de service (`type: service_account`, `client_email` + `private_key`).
 
 ## CrUX
 
