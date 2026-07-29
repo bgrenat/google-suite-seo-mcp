@@ -5,6 +5,19 @@
 
 ## Google Search Console
 
+### API et scopes : distinction importante
+
+Le MCP GSC de ce dépôt utilise un **compte de service**, pas un consentement OAuth utilisateur. Vous ne verrez donc pas forcément un scope Search Console dans **Google Auth Platform → Data Access** pour cette partie.
+
+Activez d'abord la [Search Console API](https://console.cloud.google.com/apis/library/searchconsole.googleapis.com), puis ajoutez l'adresse `client_email` du compte de service dans Search Console.
+
+Pour un flux OAuth utilisateur, les scopes Search Console sont :
+
+```text
+https://www.googleapis.com/auth/webmasters.readonly
+https://www.googleapis.com/auth/webmasters
+```
+
 Créer un compte de service Google Cloud, générer une clé JSON, puis l’enregistrer sous :
 
 - [Créer un compte de service](https://console.cloud.google.com/iam-admin/serviceaccounts/create)
@@ -38,6 +51,16 @@ Créer les identifiants OAuth et télécharger le JSON depuis :
 ```
 
 Renseigner `GOOGLE_PROJECT_ID` dans la configuration MCP du plugin avant d’utiliser GA4.
+
+### GA4 OAuth scope
+
+Dans **Google Auth Platform → Data Access**, ajoutez :
+
+```text
+https://www.googleapis.com/auth/analytics.readonly
+```
+
+Recherchez l'URI complète après avoir activé les APIs GA4. Le fichier OAuth doit être un JSON lisible sans BOM UTF-8.
 
 ## CrUX
 

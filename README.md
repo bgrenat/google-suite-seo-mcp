@@ -14,6 +14,14 @@ This plugin packages:
 - Google Analytics MCP via `googleanalytics/google-analytics-mcp`
 - CrUX helper script using the public Chrome UX Report API
 
+### Google authorization model
+
+- **GSC MCP:** service-account JSON + Search Console property permission; enable the Search Console API. OAuth scopes are not required for the default local GSC path.
+- **GA4 MCP:** OAuth JSON + `GOOGLE_PROJECT_ID`; add `https://www.googleapis.com/auth/analytics.readonly` for user OAuth access.
+- **CrUX helper:** public requests may work without credentials; set `CRUX_API_KEY` for quota-managed access.
+
+See [Google authorization](docs/GOOGLE_AUTH.md) for the exact scopes and setup order.
+
 ## Credits and upstream attribution
 
 SEO Google Suite is maintained by Powehi. It is an integration and packaging layer and is not the author of the upstream MCP servers.

@@ -12,7 +12,7 @@
       "startup_timeout_sec": 60,
       "env": {
         "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\x-v-i\\.codex\\secrets\\google\\ga4-credentials.json",
-        "GOOGLE_PROJECT_ID": "SET_YOUR_GOOGLE_CLOUD_PROJECT_ID"
+        "GOOGLE_PROJECT_ID": "plugin-codex"
       }
     }
   }
