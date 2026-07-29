@@ -14,8 +14,13 @@
     "seo",
     "google-search-console",
     "google-analytics",
+    "google-analytics-4",
+    "search-console",
     "crux",
-    "mcp"
+    "mcp",
+    "macos",
+    "linux",
+    "cross-platform"
   ],
   "skills": "./skills/",
   "interface": {
