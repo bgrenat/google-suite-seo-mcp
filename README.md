@@ -94,7 +94,7 @@ Codex plugins currently expose authentication timing in the marketplace, but do 
 
 ## Notes
 
-This is not an official Google MCP plugin. It is a local Codex plugin that wraps community and experimental MCP projects plus a small CrUX helper.
+This is not an official Google MCP plugin. It is a local plugin that wraps community and experimental MCP projects plus a small CrUX helper.
 
 ## Project links
 
