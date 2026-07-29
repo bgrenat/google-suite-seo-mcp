@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-07-29
+
+- Added macOS and Linux installation and authentication-check scripts.
+- Added platform detection for Linux x86_64/ARM64 and macOS Intel/Apple Silicon.
+- Made the default MCP configuration portable through environment variables.
+- Updated installation, compatibility, contribution, and credential documentation.
+
 ## 0.1.1 - 2026-07-29
 
 - Fixed the local GA4 OAuth JSON encoding issue caused by a UTF-8 BOM.
