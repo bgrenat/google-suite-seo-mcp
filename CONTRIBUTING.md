@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are welcome through [GitHub](https://github.com/powehi-ai/google-suite-seo-mcp).
+Contributions are welcome through [GitHub](https://github.com/bgrenat/google-suite-seo-mcp).
 
 Before submitting a change:
 

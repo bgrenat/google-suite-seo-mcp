@@ -76,5 +76,5 @@ This is not an official Google MCP plugin. It is a local Codex plugin that wraps
 ## Project links
 
 - Website: [powehi.eu](https://powehi.eu)
-- Repository: [github.com/powehi-ai/google-suite-seo-mcp](https://github.com/powehi-ai/google-suite-seo-mcp)
-- Release: [v0.1.0](https://github.com/powehi-ai/google-suite-seo-mcp/releases/tag/v0.1.0)
+- Repository: [github.com/bgrenat/google-suite-seo-mcp](https://github.com/bgrenat/google-suite-seo-mcp)
+- Release: [v0.1.0](https://github.com/bgrenat/google-suite-seo-mcp/releases/tag/v0.1.0)

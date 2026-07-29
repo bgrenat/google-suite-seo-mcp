@@ -20,7 +20,7 @@ The upstream projects below are credited here because this plugin integrates wit
 
 ## Powehi integration layer
 
-- Repository: https://github.com/powehi-ai/google-suite-seo-mcp
+- Repository: https://github.com/bgrenat/google-suite-seo-mcp
 - Maintainer: Bernard GRENAT / Powehi
 - Added here: Codex plugin manifest, MCP wiring, local credential setup, CrUX helper, bilingual documentation, and SEO audit skill
 
