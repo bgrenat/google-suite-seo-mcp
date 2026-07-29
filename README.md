@@ -2,6 +2,8 @@
 
 Local Codex plugin for Google Search Console, Google Analytics 4, and CrUX SEO workflows.
 
+Compatible with Codex, Claude Code, Cursor, and VS Code through standard MCP configurations. See [editor compatibility](docs/COMPATIBILITY.md).
+
 Maintained by Bernard GRENAT for [Powehi](https://powehi.eu). Source and project updates: [github.com/powehi-eu](https://github.com/powehi-eu).
 
 Documentation: [français](docs/GOOGLE_AUTH.md) · [English](docs/GOOGLE_AUTH.en.md)
