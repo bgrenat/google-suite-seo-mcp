@@ -13,7 +13,7 @@ Create a Google Cloud service account and download a JSON key:
 Save the file as:
 
 ```text
-C:\Users\x-v-i\.codex\secrets\google\gsc-service-account.json
+%USERPROFILE%\\.codex\\secrets\\google\\gsc-service-account.json
 ```
 
 Add the service account `client_email` to the property:
@@ -37,7 +37,7 @@ Create and download the OAuth JSON:
 Save it as:
 
 ```text
-C:\Users\x-v-i\.codex\secrets\google\ga4-credentials.json
+%USERPROFILE%\\.codex\\secrets\\google\\ga4-credentials.json
 ```
 
 Set `GOOGLE_PROJECT_ID` in the plugin MCP configuration before using GA4.

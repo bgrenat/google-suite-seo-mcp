@@ -12,7 +12,7 @@ Créer un compte de service Google Cloud, générer une clé JSON, puis l’enre
 - [Créer une clé JSON](https://console.cloud.google.com/iam-admin/serviceaccounts)
 
 ```text
-C:\Users\x-v-i\.codex\secrets\google\gsc-service-account.json
+%USERPROFILE%\\.codex\\secrets\\google\\gsc-service-account.json
 ```
 
 Ajouter le `client_email` du compte de service comme utilisateur dans Google Search Console :
@@ -34,7 +34,7 @@ Créer les identifiants OAuth et télécharger le JSON depuis :
 - [Accéder à Google Analytics](https://analytics.google.com/analytics/)
 
 ```text
-C:\Users\x-v-i\.codex\secrets\google\ga4-credentials.json
+%USERPROFILE%\\.codex\\secrets\\google\\ga4-credentials.json
 ```
 
 Renseigner `GOOGLE_PROJECT_ID` dans la configuration MCP du plugin avant d’utiliser GA4.
