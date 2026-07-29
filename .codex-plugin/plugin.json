@@ -1,0 +1,44 @@
+{
+  "name": "seo-google-suite",
+  "version": "0.1.0+codex.20260729122933",
+  "description": "Local Codex plugin for Google Search Console, GA4, and CrUX SEO workflows.",
+  "author": {
+    "name": "Bernard GRENAT",
+    "email": "contact@powehi.eu",
+    "url": "https://powehi.eu"
+  },
+  "homepage": "https://powehi.eu",
+  "repository": "https://github.com/powehi-eu",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "google-search-console",
+    "google-analytics",
+    "crux",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SEO Google Suite",
+    "shortDescription": "Connect GSC, GA4, and CrUX to Codex SEO audits.",
+    "longDescription": "SEO Google Suite packages community Google Search Console and GA4 MCP servers with local scripts and a CrUX helper for Codex-driven SEO audits. Credentials remain local and are never bundled with the plugin.",
+    "developerName": "Bernard GRENAT \u00b7 Powehi",
+    "category": "Productivity",
+    "websiteURL": "https://powehi.eu",
+    "composerIcon": "./assets/google-logo.png",
+    "logo": "./assets/google-logo.png",
+    "logoDark": "./assets/google-logo.png",
+    "capabilities": [
+      "Read",
+      "Analytics",
+      "SEO"
+    ],
+    "defaultPrompt": [
+      "Audit world-models.io with GSC and GA4.",
+      "Check CrUX field data for my site.",
+      "Verify Google SEO credentials."
+    ],
+    "brandColor": "#4285F4"
+  },
+  "mcpServers": "./.mcp.json"
+}
