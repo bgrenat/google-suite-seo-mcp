@@ -32,12 +32,14 @@ SEO Google Suite is maintained by Powehi. It is an integration and packaging lay
 
 Please consult each upstream repository for its own license, notices, and contribution history. Their names, code, and trademarks remain with their respective authors and maintainers. This repository only adds the Codex packaging, local setup scripts, documentation, and SEO workflow skill.
 
-Runtime dependencies are installed in a user-local MCP directory. GA4 uses a dedicated virtual environment named `seo-google-suite-ga4-venv` to avoid version conflicts with other Google Python tooling.
+Runtime dependencies are installed in a user-local MCP directory. GA4 uses a dedicated virtual environment named `seo-google-suite-ga4-venv` to avoid version conflicts with other Google Python tooling. Windows uses `%USERPROFILE%`; macOS/Linux use `$HOME` and place command shims in `$HOME/.local/bin`.
 
 Credentials are never bundled. Keep them under:
 
 - `%USERPROFILE%\\.codex\\secrets\\google\\gsc-service-account.json`
 - `%USERPROFILE%\\.codex\\secrets\\google\\ga4-credentials.json`
+
+On macOS/Linux, the equivalent location is `$HOME/.codex/secrets/google/`.
 
 ## Quick Start
 
@@ -50,7 +52,20 @@ The plugin's setup flow asks for the local JSON file paths and GA4 property/proj
 .\scripts\check-auth.ps1
 ```
 
+macOS/Linux:
+
+```bash
+chmod +x scripts/*.sh
+./scripts/install-gsc.sh
+./scripts/install-ga4.sh
+./scripts/check-auth.sh
+```
+
 Then restart Codex so the plugin MCP servers can be loaded.
+
+For Claude Code, Cursor, and VS Code, export the credential variables in the
+same shell that launches the editor; the MCP commands must be available on
+`PATH` (the POSIX installers place them in `$HOME/.local/bin`).
 
 Codex plugins currently expose authentication timing in the marketplace, but do not provide a custom arbitrary secret-form schema. The conversational setup skill is therefore the plugin interface for these Google-specific fields.
 

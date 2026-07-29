@@ -1,18 +1,16 @@
 {
   "mcpServers": {
     "google_search_console": {
-      "command": "C:\\Users\\x-v-i\\.codex\\mcp-servers\\bin\\gsc-mcp-go-windows-amd64.exe",
+      "command": "gsc-mcp",
       "startup_timeout_sec": 30,
-      "env": {
-        "GOOGLE_SERVICE_ACCOUNT_FILE": "C:\\Users\\x-v-i\\.codex\\secrets\\google\\gsc-service-account.json"
-      }
+      "env": { "GOOGLE_SERVICE_ACCOUNT_FILE": "${GOOGLE_SERVICE_ACCOUNT_FILE}" }
     },
     "google_analytics": {
-      "command": "C:\\Users\\x-v-i\\.codex\\mcp-servers\\ga4-venv\\Scripts\\analytics-mcp.exe",
+      "command": "analytics-mcp",
       "startup_timeout_sec": 60,
       "env": {
-        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\x-v-i\\.codex\\secrets\\google\\ga4-credentials.json",
-        "GOOGLE_PROJECT_ID": "plugin-codex"
+        "GOOGLE_APPLICATION_CREDENTIALS": "${GOOGLE_APPLICATION_CREDENTIALS}",
+        "GOOGLE_PROJECT_ID": "${GOOGLE_PROJECT_ID}"
       }
     }
   }

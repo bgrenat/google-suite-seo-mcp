@@ -15,4 +15,8 @@ foreach ($file in $files) { Get-Content -Raw $file | ConvertFrom-Json | Out-Null
 python $env:USERPROFILE\.codex\skills\.system\plugin-creator\scripts\validate_plugin.py .
 ```
 
+On macOS/Linux, run the equivalent JSON checks with Python and validate the
+plugin using the locally installed `validate_plugin.py`; do not assume a
+Windows path or PowerShell is available.
+
 Pull requests should describe affected editors, credential behavior, and verification performed. Do not include generated credentials or local runtime directories.

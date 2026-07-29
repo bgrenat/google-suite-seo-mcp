@@ -5,13 +5,15 @@ description: Configure local Google Search Console and GA4 credentials for SEO G
 
 # Configure Google credentials
 
-Use the bundled PowerShell setup wizard:
+On Windows, use the bundled PowerShell setup wizard:
 
 ```powershell
 & "<plugin-root>\scripts\configure-google.ps1"
 ```
 
 The wizard collects only local file paths and the non-secret Google Cloud project ID. It copies the JSON credentials to `%USERPROFILE%\.codex\secrets\google\`, updates the local MCP configuration, and never prints credential contents.
+
+On macOS/Linux, use `./scripts/install-gsc.sh` and `./scripts/install-ga4.sh`, then export the three variables documented in `docs/INSTALLATION.md`. Credentials belong under `$HOME/.codex/secrets/google/`.
 
 After it completes:
 

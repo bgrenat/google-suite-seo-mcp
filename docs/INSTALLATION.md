@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Windows PowerShell;
+- Windows PowerShell, macOS, or Linux;
 - Git;
 - Python 3.11+ for the GA4 MCP server;
 - a Google Cloud project;
@@ -13,6 +13,14 @@
 ```powershell
 .\scripts\install-gsc.ps1
 .\scripts\install-ga4.ps1
+```
+
+On macOS/Linux, use the POSIX scripts from a terminal:
+
+```bash
+chmod +x scripts/install-gsc.sh scripts/install-ga4.sh
+./scripts/install-gsc.sh
+./scripts/install-ga4.sh
 ```
 
 These scripts install the community upstream servers locally. They do not create or transmit Google credentials.
@@ -37,6 +45,14 @@ $env:GOOGLE_APPLICATION_CREDENTIALS = "$env:USERPROFILE\.codex\secrets\google\ga
 $env:GOOGLE_PROJECT_ID = "your-gcp-project-id"
 ```
 
+On macOS/Linux:
+
+```bash
+export GOOGLE_SERVICE_ACCOUNT_FILE="$HOME/.codex/secrets/google/gsc-service-account.json"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.codex/secrets/google/ga4-credentials.json"
+export GOOGLE_PROJECT_ID="your-gcp-project-id"
+```
+
 See [GOOGLE_AUTH.md](GOOGLE_AUTH.md) for the official Google links and [COMPATIBILITY.md](COMPATIBILITY.md) for editor-specific setup.
 
 ## Verify
@@ -44,6 +60,8 @@ See [GOOGLE_AUTH.md](GOOGLE_AUTH.md) for the official Google links and [COMPATIB
 ```powershell
 .\scripts\check-auth.ps1
 ```
+
+On macOS/Linux, run `./scripts/check-auth.sh` (Python 3 is required).
 
 This checks JSON structure only; it does not replace a live API permission test.
 

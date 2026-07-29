@@ -2,7 +2,7 @@
 
 SEO Google Suite uses the standard MCP stdio transport and can be used from Codex, Claude Code, Cursor, and VS Code.
 
-The client configuration files are templates. MCP executables must be on `PATH`, or their commands must be replaced with local absolute paths. Credential values are supplied only by the local environment.
+The client configuration files are templates. MCP executables must be on `PATH`, or their commands must be replaced with local absolute paths. Credential values are supplied only by the local environment. Windows, macOS (Intel/Apple Silicon), and Linux are supported; the GSC release asset can be overridden with `GSC_MCP_RELEASE_ASSET` if an upstream asset is renamed.
 
 ## Codex
 
@@ -25,6 +25,13 @@ VS Code reads `.vscode/mcp.json` when MCP support is enabled. The configuration 
 ```powershell
 .\scripts\install-gsc.ps1
 .\scripts\install-ga4.ps1
+```
+
+macOS/Linux:
+
+```bash
+./scripts/install-gsc.sh
+./scripts/install-ga4.sh
 ```
 
 For non-Codex clients, expose the resulting executables on `PATH` or replace the client-specific `command` values with absolute paths. Never commit credential JSON files.
