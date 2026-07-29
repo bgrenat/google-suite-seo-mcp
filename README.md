@@ -12,6 +12,16 @@ This plugin packages:
 - Google Analytics MCP via `googleanalytics/google-analytics-mcp`
 - CrUX helper script using the public Chrome UX Report API
 
+## Credits and upstream attribution
+
+SEO Google Suite is maintained by Powehi. It is an integration and packaging layer and is not the author of the upstream MCP servers.
+
+- Search Console MCP: [ncosentino/google-search-console-mcp](https://github.com/ncosentino/google-search-console-mcp), by Nicolas Cosentino. Used as the community GSC MCP implementation.
+- Google Analytics MCP: [googleanalytics/google-analytics-mcp](https://github.com/googleanalytics/google-analytics-mcp), maintained under the Google Analytics GitHub organization. Used as the GA4 MCP implementation.
+- CrUX: [Chrome UX Report API](https://developer.chrome.com/docs/crux/api/) and official Google documentation. The small helper in this plugin calls the public API.
+
+Please consult each upstream repository for its own license, notices, and contribution history. Their names, code, and trademarks remain with their respective authors and maintainers. This repository only adds the Codex packaging, local setup scripts, documentation, and SEO workflow skill.
+
 Runtime dependencies are installed under `C:\Users\x-v-i\.codex\mcp-servers`. GA4 uses a dedicated virtual environment named `seo-google-suite-ga4-venv` to avoid version conflicts with other Google Python tooling.
 
 Credentials are never bundled. Keep them under:
