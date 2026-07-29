@@ -48,6 +48,18 @@ Then restart Codex so the plugin MCP servers can be loaded.
 
 Codex plugins currently expose authentication timing in the marketplace, but do not provide a custom arbitrary secret-form schema. The conversational setup skill is therefore the plugin interface for these Google-specific fields.
 
+## Repository layout
+
+| Path | Purpose |
+| --- | --- |
+| `.codex-plugin/plugin.json` | Codex plugin metadata |
+| `.mcp.json` | Codex / Claude Code MCP configuration |
+| `.cursor/mcp.json` | Cursor MCP template |
+| `.vscode/mcp.json` | VS Code MCP template |
+| `scripts/` | Installation, credential setup, and CrUX helper |
+| `skills/` | Codex credential and SEO audit workflows |
+| `docs/` | Installation, authorization, compatibility, and credits |
+
 ## Google Console Links
 
 - GSC service account: https://console.cloud.google.com/iam-admin/serviceaccounts

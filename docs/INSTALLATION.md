@@ -47,6 +47,14 @@ See [GOOGLE_AUTH.md](GOOGLE_AUTH.md) for the official Google links and [COMPATIB
 
 This checks JSON structure only; it does not replace a live API permission test.
 
+## Configuration files
+
+- `.mcp.json`: Codex and Claude Code configuration;
+- `.cursor/mcp.json`: Cursor configuration template;
+- `.vscode/mcp.json`: VS Code configuration template.
+
+The Cursor and VS Code templates use executable names and environment-variable placeholders. The Codex/Claude file may be rewritten locally with absolute paths.
+
 ## CrUX
 
 ```powershell
