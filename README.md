@@ -1,8 +1,8 @@
 # SEO Google Suite MCP
 
-![SEO Google Suite overview](assets/seo-google-suite-overview.png)
+![SEO Google Suite overview](assets/seo-google-suite-overview.svg)
 
-Local plugin Compatible for Google Search Console, Google Analytics 4, and CrUX SEO workflows, compatible with Codex, Claude Code, Cursor, and VS Code through standard MCP configurations. See [editor compatibility](docs/COMPATIBILITY.md). 
+Local plugin Compatible for Google Search Console, Google Analytics 4, and CrUX SEO workflows, compatible with Codex, Claude Code, Cursor, VS Code, OpenClaw, and Hermes through standard MCP configurations. See [editor compatibility](docs/COMPATIBILITY.md). 
 
 Documentation: [Installation](docs/INSTALLATION.md) · [Credentials](docs/GOOGLE_AUTH.md) · [English credentials](docs/GOOGLE_AUTH.en.md) · [Editor compatibility](docs/COMPATIBILITY.md)
 
@@ -65,7 +65,7 @@ chmod +x scripts/*.sh
 
 Then restart Codex so the plugin MCP servers can be loaded.
 
-For Claude Code, Cursor, and VS Code, export the credential variables in the
+For Claude Code, Cursor, VS Code, OpenClaw, and Hermes, export the credential variables in the
 same shell that launches the editor; the MCP commands must be available on
 `PATH` (the POSIX installers place them in `$HOME/.local/bin`).
 
@@ -79,6 +79,8 @@ Codex plugins currently expose authentication timing in the marketplace, but do 
 | `.mcp.json` | Codex / Claude Code MCP configuration |
 | `.cursor/mcp.json` | Cursor MCP template |
 | `.vscode/mcp.json` | VS Code MCP template |
+| `.openclaw/mcp.json` | OpenClaw MCP template |
+| `.hermes/mcp.json` | Hermes MCP template |
 | `scripts/` | Installation, credential setup, and CrUX helper |
 | `skills/` | Codex credential and SEO audit workflows |
 | `docs/` | Installation, authorization, compatibility, and credits |

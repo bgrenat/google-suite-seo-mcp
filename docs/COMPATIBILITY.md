@@ -1,6 +1,6 @@
 # Editor compatibility
 
-SEO Google Suite uses the standard MCP stdio transport and can be used from Codex, Claude Code, Cursor, and VS Code.
+SEO Google Suite uses the standard MCP stdio transport and can be used from Codex, Claude Code, Cursor, VS Code, OpenClaw, and Hermes.
 
 The client configuration files are templates. MCP executables must be on `PATH`, or their commands must be replaced with local absolute paths. Credential values are supplied only by the local environment. Windows, macOS (Intel/Apple Silicon), and Linux are supported; the GSC release asset can be overridden with `GSC_MCP_RELEASE_ASSET` if an upstream asset is renamed.
 
@@ -19,6 +19,14 @@ Cursor reads `.cursor/mcp.json`. Configure `GOOGLE_SERVICE_ACCOUNT_FILE`, `GOOGL
 ## VS Code
 
 VS Code reads `.vscode/mcp.json` when MCP support is enabled. The configuration uses VS Code's `${env:NAME}` syntax and the same three environment variables.
+
+## OpenClaw
+
+OpenClaw reads `.openclaw/mcp.json` for project-scoped servers. Set the three Google environment variables in the shell that launches OpenClaw, and ensure `gsc-mcp` and `analytics-mcp` are on `PATH`.
+
+## Hermes
+
+Hermes reads `.hermes/mcp.json` for project-scoped servers. Set the three Google environment variables in the shell that launches Hermes, and ensure `gsc-mcp` and `analytics-mcp` are on `PATH`.
 
 ## Shared installation
 
