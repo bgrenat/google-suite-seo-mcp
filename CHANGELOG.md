@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3 - 2026-08-03
+
+- Added OpenClaw and Hermes MCP compatibility (`.openclaw/mcp.json`, `.hermes/mcp.json`).
+- Updated editor compatibility documentation and README for the two new clients.
+- Updated the repository "About" description and topics.
+- Added OpenClaw and Hermes panels with official logos to the overview illustration.
+
 ## 0.1.2 - 2026-07-29
 
 - Added macOS and Linux installation and authentication-check scripts.
