@@ -1,0 +1,16 @@
+{
+  "name": "seo-google-suite",
+  "version": "0.1.4",
+  "description": "Connect Google Search Console, GA4, and CrUX to SEO audits via MCP.",
+  "license": "MIT",
+  "homepage": "https://powehi.eu",
+  "repository": "https://github.com/powehi-eu/google-suite-seo-mcp",
+  "openclaw": {
+    "compat": {
+      "pluginApi": ">=2026.1.0"
+    },
+    "build": {
+      "openclawVersion": "2026.7.29"
+    }
+  }
+}
