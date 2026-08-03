@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.8 - 2026-08-03
+
+- Declared the `CRUX_API_KEY` provider and its disclosed destination in `openclaw.plugin.json` so ClawHub's scanner recognizes the credential as expected, addressing the recurring `suspicious.env_credential_access` finding.
+
 ## 0.1.7 - 2026-08-03
 
 - Sent the CrUX API key via the `X-goog-api-key` header instead of the query string, to address the ClawHub security audit finding (`suspicious.env_credential_access`) in `scripts/crux-query.mjs`.

@@ -1,6 +1,6 @@
 {
   "name": "seo-google-suite",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Connect Google Search Console, GA4, and CrUX to SEO audits via MCP.",
   "license": "MIT",
   "homepage": "https://powehi.eu",

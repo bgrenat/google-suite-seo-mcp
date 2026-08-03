@@ -2,7 +2,7 @@
   "id": "seo-google-suite",
   "name": "SEO Google Suite",
   "description": "Connect Google Search Console, GA4, and CrUX to SEO audits via MCP.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "activation": {
     "onStartup": false
   },
@@ -29,6 +29,17 @@
             "fileEnvVar": "GOOGLE_APPLICATION_CREDENTIALS",
             "credentialMarker": "ga4-credentials-found",
             "source": "GA4 OAuth credentials JSON"
+          }
+        ]
+      },
+      {
+        "id": "crux",
+        "envVars": ["CRUX_API_KEY"],
+        "authEvidence": [
+          {
+            "type": "env-only",
+            "credentialMarker": "crux-api-key-found",
+            "source": "CrUX API key, sent only to https://chromeuxreport.googleapis.com (Google's official CrUX endpoint) as the X-goog-api-key header in scripts/crux-query.mjs"
           }
         ]
       }

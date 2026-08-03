@@ -102,4 +102,4 @@ This is not an official Google MCP plugin. It is a local plugin that wraps commu
 
 - Website: [powehi.eu](https://powehi.eu)
 - Repository: [github.com/bgrenat/google-suite-seo-mcp](https://github.com/bgrenat/google-suite-seo-mcp)
-- Release: [v0.1.7](https://github.com/powehi-eu/google-suite-seo-mcp/releases/tag/v0.1.7)
+- Release: [v0.1.8](https://github.com/powehi-eu/google-suite-seo-mcp/releases/tag/v0.1.8)
