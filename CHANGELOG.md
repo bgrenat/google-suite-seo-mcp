@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.7 - 2026-08-03
+
+- Sent the CrUX API key via the `X-goog-api-key` header instead of the query string, to address the ClawHub security audit finding (`suspicious.env_credential_access`) in `scripts/crux-query.mjs`.
+
 ## 0.1.6 - 2026-08-03
 
 - Added a minimal `index.js` plugin entrypoint and `openclaw.extensions` declaration required by ClawHub validation.

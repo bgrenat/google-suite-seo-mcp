@@ -6,14 +6,16 @@ if (!origin) {
   process.exit(1);
 }
 
+// CRUX_API_KEY is sent only to Google's official CrUX endpoint above, never elsewhere.
 const apiKey = process.env.CRUX_API_KEY;
-const url = apiKey ? `${endpoint}?key=${encodeURIComponent(apiKey)}` : endpoint;
+const headers = { "content-type": "application/json" };
+if (apiKey) {
+  headers["X-goog-api-key"] = apiKey;
+}
 
-const response = await fetch(url, {
+const response = await fetch(endpoint, {
   method: "POST",
-  headers: {
-    "content-type": "application/json"
-  },
+  headers,
   body: JSON.stringify({
     origin,
     formFactor: "PHONE"
