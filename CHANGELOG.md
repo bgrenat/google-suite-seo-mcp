@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6 - 2026-08-03
+
+- Added a minimal `index.js` plugin entrypoint and `openclaw.extensions` declaration required by ClawHub validation.
+
 ## 0.1.5 - 2026-08-03
 
 - Added `package.json` with `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion` metadata required by ClawHub validation.

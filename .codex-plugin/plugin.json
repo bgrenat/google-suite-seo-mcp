@@ -1,6 +1,6 @@
 {
   "name": "seo-google-suite",
-  "version": "0.1.5+codex.20260803000000",
+  "version": "0.1.6+codex.20260803000000",
   "description": "Local Codex plugin for Google Search Console, GA4, and CrUX SEO workflows.",
   "author": {
     "name": "Bernard GRENAT",
