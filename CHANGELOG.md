@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5 - 2026-08-03
+
+- Added `package.json` with `openclaw.compat.pluginApi` and `openclaw.build.openclawVersion` metadata required by ClawHub validation.
+
 ## 0.1.4 - 2026-08-03
 
 - Added `openclaw.plugin.json` manifest required for ClawHub publishing.
