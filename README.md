@@ -1,6 +1,6 @@
 # SEO Google Suite MCP
 
-![SEO Google Suite overview](assets/seo-google-suite-overview.svg)
+![SEO Google Suite overview](assets/seo-google-suite-overview.png)
 
 Local plugin Compatible for Google Search Console, Google Analytics 4, and CrUX SEO workflows, compatible with Codex, Claude Code, Cursor, VS Code, OpenClaw, and Hermes through standard MCP configurations. See [editor compatibility](docs/COMPATIBILITY.md). 
 
