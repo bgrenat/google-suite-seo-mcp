@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4 - 2026-08-03
+
+- Added `openclaw.plugin.json` manifest required for ClawHub publishing.
+
 ## 0.1.3 - 2026-08-03
 
 - Added OpenClaw and Hermes MCP compatibility (`.openclaw/mcp.json`, `.hermes/mcp.json`).
